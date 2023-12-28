@@ -1,0 +1,15 @@
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\bin\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.exe
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\bin\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.deps.json
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\bin\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.runtimeconfig.json
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\bin\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.dll
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\bin\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.pdb
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.AssemblyInfoInputs.cache
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.AssemblyInfo.cs
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.csproj.CoreCompileInputs.cache
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.sourcelink.json
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.dll
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\refint\001-ExemploFundamentos-CriandoNossoProjeto.dll
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.pdb
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\001-ExemploFundamentos-CriandoNossoProjeto.genruntimeconfig.cache
+C:\workspace\dawidson\projetos\DecolaTech2024\001-ExemploFundamentos-CriandoNossoProjeto\obj\Debug\net8.0\ref\001-ExemploFundamentos-CriandoNossoProjeto.dll
