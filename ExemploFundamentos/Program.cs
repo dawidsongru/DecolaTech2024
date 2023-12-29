@@ -1,22 +1,33 @@
 ﻿using ExemploFundamentos.Models;
- 
 
-bool ehMaiorDeIdade = true;                             // Se uma dessas duas condições for verdadeira, cai no if
-bool possuiAutorizacaoDoResponsavel = false;            
-                                                        // || Operador OU
-if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)   // o if sempre vai verificar se a condição é verdadeira
+
+bool possuiPresencaMinima = true;
+double media = 7.5;
+
+if (possuiPresencaMinima && media >= 7)
 {
-    Console.WriteLine("Entrada liberada!");
+    Console.WriteLine("Aprovado");
 }
-else                                                    // se for falso, sempre cai no else
+else
 {
-    Console.WriteLine("Entrada não liberada!");
+    Console.WriteLine("Reprovado");
 }
 
 
 
 
 
+// bool ehMaiorDeIdade = true;                             // Se uma dessas duas condições for verdadeira, cai no if
+// bool possuiAutorizacaoDoResponsavel = false;            
+//                                                         // || Operador OU
+// if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)   // o if sempre vai verificar se a condição é verdadeira
+// {
+//     Console.WriteLine("Entrada liberada!");
+// }
+// else                                                    // se for falso, sempre cai no else
+// {
+//     Console.WriteLine("Entrada não liberada!");
+// }
 
 
 
