@@ -1,5 +1,14 @@
 ﻿using ExemploFundamentos.Models;
 
+int a = 10;
+int b = 20;
+
+int c = a + b;
+
+Console.WriteLine(c);
+
+
+
 // Data e hora atual
 // DateTime dataAtual = DateTime.Now;      // Data e hora atual
 // Console.WriteLine(dataAtual);
@@ -13,8 +22,8 @@
 // Console.WriteLine(dataAtual.ToString("dd/MM/yyyy"));    // Data atual mais 5 dias, sem horário. O mês é sempre com MM maiúsculo.
 
 // Data atual mais 5 dias, e horário sem milisegundos
-DateTime dataAtual = DateTime.Now.AddDays(5);
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));    // Data atual mais 5 dias, e horário sem milisegundos
+// DateTime dataAtual = DateTime.Now.AddDays(5);
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));    // Data atual mais 5 dias, e horário sem milisegundos
 
 
 
