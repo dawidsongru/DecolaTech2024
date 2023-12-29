@@ -1,5 +1,25 @@
 ﻿using ExemploFundamentos.Models;
 
+// double a = 4 / 2 + 2;       // O C# obedece a mesma ordem das operações matemáticas
+                            // 1º Parênteses, 2º Expoente, 3º Divisão e Multiplicação e 4º Adição e Subtração
+
+double a = 4 / (2 + 2);
+
+Console.WriteLine(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // int a = 5;            // funciona porque int cabe em double
 // double b = a;
 
@@ -15,10 +35,10 @@
 // long a = long.MaxValue;     // não funciona, porque MaxValue é o valor máximo que o Long representa e o Long não cabe dentro de Int.
 // int b = Convert.ToInt32(a);
 
-int a = int.MaxValue;     // funciona, porque MaxValue é o valor máximo que o Int representa e o Int cabe dentro de Long.
-long b = a;
+// int a = int.MaxValue;     // funciona, porque MaxValue é o valor máximo que o Int representa e o Int cabe dentro de Long.
+// long b = a;
 
-Console.WriteLine(b);
+// Console.WriteLine(b);
 
 
 
