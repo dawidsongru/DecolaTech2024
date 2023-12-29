@@ -1,22 +1,51 @@
 ﻿using ExemploFundamentos.Models;
 
 
-int quantidadeEmEstoque = 10;
-int quantidadeCompra = 4;
-bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;   // variável booleana que vai representar true ou false
+int quantidadeEmEstoque = 3;
+int quantidadeCompra = 0;       // = Operador de atribuição, quando queremos atribuir um valor para uma variável.
+bool possivelVenda = quantidadeCompra > 0 &&   quantidadeEmEstoque >= quantidadeCompra;
 
 Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
 Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
-Console.WriteLine($"É possível realizar a venda? {possivelVenda}");  // Retorna True ou False
+Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
 
-if (possivelVenda)      // if só valida condições.
+
+if (quantidadeCompra == 0)  // ==   Comparação. Compara se um valor é igual a outro, por exemplo.
 {
-    Console.WriteLine("Venda realizada.");      // Condição verdadeira, exibe essa mensagem
+    Console.WriteLine("Venda inválida.");
+}
+
+else if (possivelVenda)
+{
+    Console.WriteLine("Venda realizada.");
 }
 else
 {
-    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");         // Condição false, não exibe essa mensagem
+    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");
 }
+
+
+
+
+
+
+
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+// bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;   // variável booleana que vai representar true ou false
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda? {possivelVenda}");  // Retorna True ou False
+
+// if (possivelVenda)      // if só valida condições.
+// {
+//     Console.WriteLine("Venda realizada.");      // Condição verdadeira, exibe essa mensagem
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");         // Condição false, não exibe essa mensagem
+// }
 
 
 
