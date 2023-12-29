@@ -1,18 +1,30 @@
 ﻿using ExemploFundamentos.Models;
 
-int a = 10;
-int b = 20;
 
-int c = a + b;
+
+// Cast ou Casting: é o processo de conversão de um tipo para outro, neste caso, String para Inteiro.
+// int a = Convert.ToInt32("5");        // ToInt32 é uma variável do tipo inteiro de 32 bits, que representa um número de aproximadamente 2 bilhões
+int a = int.Parse("5");
+
+Console.WriteLine(a);
+
+
+
+
+
+// int a = 10;
+// int b = 20;
+
+// int c = a + b;
 
 // c = c + 5;   // 30 + 5
 
 // c += 5;      // 30 + 5
 // c -= 5;       // 30 - 5
-c *= 5;         // 30 * 5
+// c *= 5;         // 30 * 5
 
 
-Console.WriteLine(c);
+// Console.WriteLine(c);
 
 
 
