@@ -1,28 +1,106 @@
 ﻿using ExemploFundamentos.Models;
+ 
 
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine() ?? "";
 
-int quantidadeEmEstoque = 3;
-int quantidadeCompra = 0;       // = Operador de atribuição, quando queremos atribuir um valor para uma variável.
-bool possivelVenda = quantidadeCompra > 0 &&   quantidadeEmEstoque >= quantidadeCompra;
-
-Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
-Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
-Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
-
-
-if (quantidadeCompra == 0)  // ==   Comparação. Compara se um valor é igual a outro, por exemplo.
+switch (letra)
 {
-    Console.WriteLine("Venda inválida.");
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+
+    default:
+        Console.WriteLine("Não é uma vogal");
+        break;
 }
 
-else if (possivelVenda)
-{
-    Console.WriteLine("Venda realizada.");
-}
-else
-{
-    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");
-}
+
+
+
+
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine() ?? "";        // Permite que o terminal espere por algum comando e pressione enter
+
+// if (letra == "a" ||     // || Sinal de OU
+//     letra == "e" ||
+//     letra == "i" ||
+//     letra == "o" ||
+//     letra == "u")
+// {
+//     Console.WriteLine("Vogal");
+// }
+// else
+// {
+//     Console.WriteLine("Não é uma vogal");
+// }
+
+
+
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine() ?? "";         // Permite que o terminal espere por algum comando e pressione enter
+
+// if (letra == "a")
+// {
+//     Console.WriteLine("Vogal");
+// }
+
+// else if (letra == "e")
+// {
+//     Console.WriteLine("Vogal");
+// }
+
+// else if (letra == "i")
+// {
+//     Console.WriteLine("Vogal");
+// }
+
+// else if (letra == "o")
+// {
+//     Console.WriteLine("Vogal");
+// }
+
+// else if (letra == "u")
+// {
+//     Console.WriteLine("Vogal");
+// }
+
+// else
+// {
+//     Console.WriteLine("Não é uma vogal");
+// }
+
+
+
+
+
+
+// int quantidadeEmEstoque = 3;
+// int quantidadeCompra = 0;       // = Operador de atribuição, quando queremos atribuir um valor para uma variável.
+// bool possivelVenda = quantidadeCompra > 0 &&   quantidadeEmEstoque >= quantidadeCompra;
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
+
+
+// if (quantidadeCompra == 0)  // ==   Comparação. Compara se um valor é igual a outro, por exemplo.
+// {
+//     Console.WriteLine("Venda inválida.");
+// }
+
+// else if (possivelVenda)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");
+// }
 
 
 
