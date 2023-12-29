@@ -4,6 +4,7 @@
 string apresentacao = "Olá, seja bem vindo";
 
 int quantidade = 1;
+quantidade = 10;
 
 double altura = 1.80;
 
