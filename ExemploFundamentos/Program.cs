@@ -1,14 +1,34 @@
 ﻿using ExemploFundamentos.Models;
 
+// int a = 5;            // funciona porque int cabe em double
+// double b = a;
+
+// int a = 5;            // funciona porque int cabe em long
+// long b = a;
+
+// long a = 5;           // não funciona, porque long não cabe em int
+// int b = a;
+
+// long a = 5;           // agora funciona, porque fez a conversão.
+// int b = Convert.ToInt32(a);
+
+// long a = long.MaxValue;     // não funciona, porque MaxValue é o valor máximo que o Long representa e o Long não cabe dentro de Int.
+// int b = Convert.ToInt32(a);
+
+int a = int.MaxValue;     // funciona, porque MaxValue é o valor máximo que o Int representa e o Int cabe dentro de Long.
+long b = a;
+
+Console.WriteLine(b);
+
+
+
 // string a = 5;                      // dá erro
 // string a = "5";                    // funciona
 
-int inteiro = 5;                      // funciona
-string a = inteiro.ToString();
+// int inteiro = 5;                      // funciona
+// string a = inteiro.ToString();
 
-Console.WriteLine(a);
-
-
+// Console.WriteLine(a);
 
 
 
