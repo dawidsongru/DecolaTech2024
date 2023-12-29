@@ -1,23 +1,45 @@
 ﻿using ExemploFundamentos.Models;
  
 
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine() ?? "";
-
-switch (letra)
+bool ehMaiorDeIdade = true;                             // Se uma dessas duas condições for verdadeira, cai no if
+bool possuiAutorizacaoDoResponsavel = false;            
+                                                        // || Operador OU
+if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)   // o if sempre vai verificar se a condição é verdadeira
 {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal");
-        break;
-
-    default:
-        Console.WriteLine("Não é uma vogal");
-        break;
+    Console.WriteLine("Entrada liberada!");
 }
+else                                                    // se for falso, sempre cai no else
+{
+    Console.WriteLine("Entrada não liberada!");
+}
+
+
+
+
+
+
+
+
+
+
+
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine() ?? "";
+
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal");
+//         break;
+
+//     default:
+//         Console.WriteLine("Não é uma vogal");
+//         break;
+// }
 
 
 
