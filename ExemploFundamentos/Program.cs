@@ -1,19 +1,38 @@
 ﻿using ExemploFundamentos.Models;
 
+// Convertendo de maneira segura
+
+
+string a = "15-";           // quando encontrar um erro 15-, o TryParse não interrompe a execução e continua o restante do código.
+
+// int b = 0;
+                    // também posso colocar o tipo da variável na mesma linha do TryParse 
+int.TryParse(a, out int b);     // O TryParse vai tentar converter o "a", se não conseguir, o valor de saída será o "b" e continuará a execução do restante do código.
+
+
+Console.WriteLine(b);
+Console.WriteLine("Conversão realizada com sucesso!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // double a = 4 / 2 + 2;       // O C# obedece a mesma ordem das operações matemáticas
-                            // 1º Parênteses, 2º Expoente, 3º Divisão e Multiplicação e 4º Adição e Subtração
+                               // 1º Parênteses, 2º Expoente, 3º Divisão e Multiplicação e 4º Adição e Subtração
 
-double a = 4 / (2 + 2);
+// double a = 4 / (2 + 2);
 
-Console.WriteLine(a);
-
-
-
-
-
-
-
-
+// Console.WriteLine(a);
 
 
 
