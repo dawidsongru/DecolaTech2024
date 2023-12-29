@@ -1,17 +1,86 @@
 ﻿using ExemploFundamentos.Models;
 
+
+int quantidadeEmEstoque = 10;
+int quantidadeCompra = 4;
+bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;   // variável booleana que vai representar true ou false
+
+Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+Console.WriteLine($"É possível realizar a venda? {possivelVenda}");  // Retorna True ou False
+
+if (possivelVenda)      // if só valida condições.
+{
+    Console.WriteLine("Venda realizada.");      // Condição verdadeira, exibe essa mensagem
+}
+else
+{
+    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");         // Condição false, não exibe essa mensagem
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+// bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;   // variável booleana que vai representar true ou false
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda? {possivelVenda}");  // Retorna True ou False
+
+// if (possivelVenda)      // if só valida condições.
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");
+// }
+
+
+
+
+
+// int quantidadeEmEstoque = 10;
+
+// int quantidadeCompra = 4;
+
+
+// if (quantidadeEmEstoque >= quantidadeCompra)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque.");
+// }
+
+
+
+
+
 // Convertendo de maneira segura
 
 
-string a = "15-";           // quando encontrar um erro 15-, o TryParse não interrompe a execução e continua o restante do código.
+// string a = "15-";           // quando encontrar um erro 15-, o TryParse não interrompe a execução e continua o restante do código.
 
 // int b = 0;
                     // também posso colocar o tipo da variável na mesma linha do TryParse 
-int.TryParse(a, out int b);     // O TryParse vai tentar converter o "a", se não conseguir, o valor de saída será o "b" e continuará a execução do restante do código.
+// int.TryParse(a, out int b);     // O TryParse vai tentar converter o "a", se não conseguir, o valor de saída será o "b" e continuará a execução do restante do código.
 
 
-Console.WriteLine(b);
-Console.WriteLine("Conversão realizada com sucesso!");
+// Console.WriteLine(b);
+// Console.WriteLine("Conversão realizada com sucesso!");
 
 
 
