@@ -1,17 +1,31 @@
 ﻿using ExemploFundamentos.Models;
 
+bool choveu = false;
+bool estaTarde = false;
 
-bool possuiPresencaMinima = true;
-double media = 7.5;
-
-if (possuiPresencaMinima && media >= 7)
+if (!choveu && !estaTarde)                // se não choveu e não está tarde
 {
-    Console.WriteLine("Aprovado");
+    Console.WriteLine("Vou pedalar");   
 }
 else
 {
-    Console.WriteLine("Reprovado");
+    Console.WriteLine("Vou pedalar outro dia");   
 }
+
+
+
+
+// bool possuiPresencaMinima = true;
+// double media = 7.5;
+
+// if (possuiPresencaMinima && media >= 7)
+// {
+//     Console.WriteLine("Aprovado");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado");
+// }
 
 
 
