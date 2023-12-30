@@ -6,7 +6,7 @@ int contador = 0;               // contador começando em 0
 
 while (contador <= 10)          // Enquanto uma condição for verdadeira, execute o código. While só tem a condição.
 {
-    Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador}");
+    Console.WriteLine($"{contador + 1}º Execução: {numero} x {contador} = {numero * contador}");
     contador++;
 }
 
