@@ -1,23 +1,84 @@
 ﻿using ExemploFundamentos.Models;
 
-// do                               // estrutura do DO WHILE
-// {                                // A verificação do DO WHILE é executada no final do código.
 
-// } while(true);
-
-
-int soma = 0, numero = 0;           // Podemos declarar várias variáveis na mesma linha, desde que seja do mesmo tipo.
-
-do
+internal class Program
 {
-    Console.WriteLine("Digite um número (0 para parar)");
-    numero = Convert.ToInt32(Console.ReadLine());   // Aguardar o usuário digitar um número e Enter. Converter String para Int.
+    private static void Main(string[] args)
+    {
+        string opcao;
 
-    soma += numero;                                 // soma = (soma+numero)        é a mesma coisa
 
-} while(numero != 0);               // enquanto o número for diferente de 0, continue. Quando for 0, pare. != significa diferente.
+        while (true)
+        {
+            // Console.Clear();                                    // Limpar o console para não ficar exibindo as opções
+            Console.WriteLine("Digite sua opção:");
+            Console.WriteLine("1 - Cadastrar cliente");
+            Console.WriteLine("2 - Buscar cliente");
+            Console.WriteLine("3 - Apagar cliente");
+            Console.WriteLine("4 - Encerrar");
 
-Console.WriteLine($"Total da soma dos números digitados é: {soma}");   // quando quiser misturar texto com variável, coloca $ no início.
+            opcao = Console.ReadLine() ??"";
+
+            switch (opcao)
+            {
+                case "1":
+                    Console.WriteLine("1 - Cadastro de cliente");
+                    break;
+
+                case "2":
+                    Console.WriteLine("2 - Busca de cliente");
+                    break;
+
+                case "3":
+                    Console.WriteLine("3 - Apagar cliente");
+                    break;
+
+                case "4":
+                    Console.WriteLine("4 - Encerrar");
+                    Environment.Exit(0);                        // Quebrar o loop e sair do programa.
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida");
+                    break;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // do                               // estrutura do DO WHILE
+// // {                                // A verificação do DO WHILE é executada no final do código.
+
+// // } while(true);
+
+
+// int soma = 0, numero = 0;           // Podemos declarar várias variáveis na mesma linha, desde que seja do mesmo tipo.
+
+// do
+// {
+//     Console.WriteLine("Digite um número (0 para parar)");
+//     numero = Convert.ToInt32(Console.ReadLine());   // Aguardar o usuário digitar um número e Enter. Converter String para Int.
+
+//     soma += numero;                                 // soma = (soma+numero)        é a mesma coisa
+
+// } while(numero != 0);               // enquanto o número for diferente de 0, continue. Quando for 0, pare. != significa diferente.
+
+// Console.WriteLine($"Total da soma dos números digitados é: {soma}");   // quando quiser misturar texto com variável, coloca $ no início.
 
 
 
@@ -326,7 +387,7 @@ Console.WriteLine($"Total da soma dos números digitados é: {soma}");   // quan
 // string a = "15-";           // quando encontrar um erro 15-, o TryParse não interrompe a execução e continua o restante do código.
 
 // int b = 0;
-                    // também posso colocar o tipo da variável na mesma linha do TryParse 
+// também posso colocar o tipo da variável na mesma linha do TryParse 
 // int.TryParse(a, out int b);     // O TryParse vai tentar converter o "a", se não conseguir, o valor de saída será o "b" e continuará a execução do restante do código.
 
 
@@ -348,7 +409,7 @@ Console.WriteLine($"Total da soma dos números digitados é: {soma}");   // quan
 
 
 // double a = 4 / 2 + 2;       // O C# obedece a mesma ordem das operações matemáticas
-                               // 1º Parênteses, 2º Expoente, 3º Divisão e Multiplicação e 4º Adição e Subtração
+// 1º Parênteses, 2º Expoente, 3º Divisão e Multiplicação e 4º Adição e Subtração
 
 // double a = 4 / (2 + 2);
 
