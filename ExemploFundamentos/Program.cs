@@ -3,10 +3,15 @@
 
 Calculadora calc = new Calculadora();    // Instanciar uma classe. Criar uma varável do tipo calculadora.
 
-calc.Somar(10, 30);                      // a vírcula delimita cada parâmetro. Ex: (10, 30)
-calc.Subtrair(10, 50);
-calc.Multiplicar(15, 45);
-calc.Dividir(2, 2);
+// calc.Somar(10, 30);                      // a vírcula delimita cada parâmetro. Ex: (10, 30)
+// calc.Subtrair(10, 50);
+// calc.Multiplicar(15, 45);
+// calc.Dividir(2, 2);
+calc.Potencia(3, 3);
+
+
+
+
 
 
 
