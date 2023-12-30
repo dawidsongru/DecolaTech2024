@@ -2,12 +2,17 @@
 
     
 int numero = 5;
-int contador = 0;               // contador começando em 0
+int contador = 1;               // contador começando em 1
 
 while (contador <= 10)          // Enquanto uma condição for verdadeira, execute o código. While só tem a condição.
 {
-    Console.WriteLine($"{contador + 1}º Execução: {numero} x {contador} = {numero * contador}");
+    Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador}");
     contador++;
+
+    if (contador == 6)          // Comparar quando contador for = 6, execute o "break" pra interronper.
+    {
+        break;                  // quebrar o laço com o comando break
+    }
 }
 
 
