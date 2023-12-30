@@ -1,10 +1,13 @@
 ﻿using ExemploFundamentos.Models;
 
+    
 int numero = 5;
+int contador = 0;               // contador começando em 0
 
-for(int contador = 0; contador <=10; contador++)
+while (contador <= 10)          // Enquanto uma condição for verdadeira, execute o código. While só tem a condição.
 {
-    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+    Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador}");
+    contador++;
 }
 
 
@@ -13,11 +16,12 @@ for(int contador = 0; contador <=10; contador++)
 
 
 
+// int numero = 5;
 
-
-
-
-
+// for(int contador = 0; contador <=10; contador++)        // for = para
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+// }
 
 
 
