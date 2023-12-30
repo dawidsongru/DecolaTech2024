@@ -1,19 +1,42 @@
 ﻿using ExemploFundamentos.Models;
 
-    
-int numero = 5;
-int contador = 1;               // contador começando em 1
+// do                               // estrutura do DO WHILE
+// {                                // A verificação do DO WHILE é executada no final do código.
 
-while (contador <= 10)          // Enquanto uma condição for verdadeira, execute o código. While só tem a condição.
+// } while(true);
+
+
+int soma = 0, numero = 0;           // Podemos declarar várias variáveis na mesma linha, desde que seja do mesmo tipo.
+
+do
 {
-    Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador}");
-    contador++;
+    Console.WriteLine("Digite um número (0 para parar)");
+    numero = Convert.ToInt32(Console.ReadLine());   // Aguardar o usuário digitar um número e Enter. Converter String para Int.
 
-    if (contador == 6)          // Comparar quando contador for = 6, execute o "break" pra interronper.
-    {
-        break;                  // quebrar o laço com o comando break
-    }
-}
+    soma += numero;                                 // soma = (soma+numero)        é a mesma coisa
+
+} while(numero != 0);               // enquanto o número for diferente de 0, continue. Quando for 0, pare. != significa diferente.
+
+Console.WriteLine($"Total da soma dos números digitados é: {soma}");   // quando quiser misturar texto com variável, coloca $ no início.
+
+
+
+
+
+
+// int numero = 5;
+// int contador = 1;               // contador começando em 1
+
+// while (contador <= 10)          // Enquanto uma condição for verdadeira, execute o código. While só tem a condição.
+// {
+//     Console.WriteLine($"{contador}º Execução: {numero} x {contador} = {numero * contador}");
+//     contador++;
+
+//     if (contador == 6)          // Comparar quando contador for = 6, execute o "break" pra interronper.
+//     {
+//         break;                  // quebrar o laço com o comando break
+//     }
+// }
 
 
 
