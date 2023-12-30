@@ -1,7 +1,28 @@
 ﻿using ExemploFundamentos.Models;
 
+int numero = 5;
 
-Calculadora calc = new Calculadora();    // Instanciar uma classe. Criar uma varável do tipo calculadora.
+for(int contador = 0; contador <=10; contador++)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero * contador}");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Calculadora calc = new Calculadora();    // Instanciar uma classe. Criar uma varável do tipo calculadora.
 
 // calc.Somar(10, 30);                      // a vírgula delimita cada parâmetro. Ex: (10, 30)
 // calc.Subtrair(10, 50);
@@ -11,7 +32,7 @@ Calculadora calc = new Calculadora();    // Instanciar uma classe. Criar uma var
 // calc.Seno(30);
 // calc.Coseno(30);
 // calc.Tangente(30);
-calc.RaizQuadrada(9);
+// calc.RaizQuadrada(9);
 
 
 
