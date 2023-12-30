@@ -1,16 +1,27 @@
 ﻿using ExemploFundamentos.Models;
 
-bool choveu = false;
-bool estaTarde = false;
 
-if (!choveu && !estaTarde)                // se não choveu e não está tarde
-{
-    Console.WriteLine("Vou pedalar");   
-}
-else
-{
-    Console.WriteLine("Vou pedalar outro dia");   
-}
+Calculadora calc = new Calculadora();    // Instanciar uma classe. Criar uma varável do tipo calculadora.
+
+calc.Somar(10, 30);                      // a vírcula delimita cada parâmetro. Ex: (10, 30)
+calc.Subtrair(10, 50);
+calc.Multiplicar(15, 45);
+calc.Dividir(2, 2);
+
+
+
+
+// bool choveu = false;
+// bool estaTarde = false;
+
+// if (!choveu && !estaTarde)                // se não choveu e não está tarde
+// {
+//     Console.WriteLine("Vou pedalar");   
+// }
+// else
+// {
+//     Console.WriteLine("Vou pedalar outro dia");   
+// }
 
 
 
