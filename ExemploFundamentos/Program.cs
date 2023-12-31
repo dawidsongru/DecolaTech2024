@@ -1,5 +1,5 @@
-﻿using System.Security.AccessControl;
-using ExemploFundamentos.Models;
+﻿using ExemploFundamentos.Models;
+
 
 int[] arrayInteiros = new int[4];       // Array do tipo inteiro, com 4 posições, que pode armazenar 4 valores diferentes.
 
@@ -8,11 +8,30 @@ arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 arrayInteiros[3] = 1;
 
+Console.WriteLine("Percorrendo o Array com o FOR");
 for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
 {
     Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
-
 }
+
+
+Console.WriteLine("Percorrendo o Array com o FOREACH, sem contador");
+
+foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
+{
+    Console.WriteLine(valor);
+}
+
+
+Console.WriteLine("Percorrendo o Array com o FOREACH, com contador");
+
+int contadorForeach = 0;
+foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
+{
+    Console.WriteLine($"Posição Nº {contadorForeach} = {valor}");
+    contadorForeach++;
+}
+
 
 
 
