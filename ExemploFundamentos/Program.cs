@@ -1,23 +1,65 @@
 ﻿using ExemploFundamentos.Models;
 
 
-int[] arrayInteiros = new int[4];       // Array do tipo inteiro, com 4 posições, que pode armazenar 4 valores diferentes.
+// Trabalhando com Listas
+List<string> listaString = new List<string>();    // Sintaxe de uma lista. Lista é uma Classe do tipo string = new List<string> chamada de listaString. Não passo capacidade () pra ela, porque ela não precisa.
 
-arrayInteiros[0] = 72;                  // Adicionando valores no array. A 1ª posição do array é sempre 0. Array na posição 0, recebe 72.
-arrayInteiros[1] = 64;
-arrayInteiros[2] = 50;
-arrayInteiros[3] = 1;
+listaString.Add("SP");     // A lista é muito mais completa que um Array.
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+
+Console.WriteLine($"Itens da minha lista: {listaString.Count} - Capadidade: {listaString.Capacity}");
+
+listaString.Add("SC");
+
+Console.WriteLine($"Itens da minha lista: {listaString.Count} - Capadidade: {listaString.Capacity}");
+
+listaString.Remove("MG");
+
+Console.WriteLine($"Itens da minha lista: {listaString.Count} - Capadidade: {listaString.Capacity}");
 
 
-int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2]; // Classe Array com várias operações. Dobrando a capacidade do Array de 4 para 8 posições.
-Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+// Console.WriteLine("Percorrendo a lista com o FOR");
+// for(int contador = 0; contador < listaString.Count; contador++)             // No Array passamos o Lenght. Numa lista, passamos o Count. Ele vai retornar a quantidade de elementos do Array.
+// {
+//     Console.WriteLine($"Posição Nº {contador} - {listaString[contador]}");  // Pegar o valor da lista
+// }
+
+// Console.WriteLine("Percorrendo a lista com o FOREACH");
+// int contadorForeach = 0;
+// foreach(string item in listaString)
+// {
+//     Console.WriteLine($"Posição Nº {contadorForeach} - {item}");  // Pegar o valor da lista
+//     contadorForeach++;
+// }
 
 
-Console.WriteLine("Percorrendo o Array com o FOR");
-for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
-{
-    Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
-}
+
+
+
+
+
+
+
+// int[] arrayInteiros = new int[4];       // Array do tipo inteiro, com 4 posições, que pode armazenar 4 valores diferentes.
+
+// arrayInteiros[0] = 72;                  // Adicionando valores no array. A 1ª posição do array é sempre 0. Array na posição 0, recebe 72.
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[3] = 1;
+
+
+// int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2]; // Classe Array com várias operações. Dobrando a capacidade do Array de 4 para 8 posições.
+// Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+
+// Console.WriteLine("Percorrendo o Array com o FOR");
+// for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
+// {
+//     Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
+// } 
 
 
 
