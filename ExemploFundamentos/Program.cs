@@ -8,6 +8,10 @@ arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
 arrayInteiros[3] = 1;
 
+
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2) // Classe Array com várias operações. Dobrando a capacidade do Array de 4 para 8 posições.
+
+
 Console.WriteLine("Percorrendo o Array com o FOR");
 for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
 {
@@ -15,22 +19,56 @@ for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o
 }
 
 
-Console.WriteLine("Percorrendo o Array com o FOREACH, sem contador");
-
-foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
-{
-    Console.WriteLine(valor);
-}
 
 
-Console.WriteLine("Percorrendo o Array com o FOREACH, com contador");
 
-int contadorForeach = 0;
-foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
-{
-    Console.WriteLine($"Posição Nº {contadorForeach} = {valor}");
-    contadorForeach++;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int[] arrayInteiros = new int[4];       // Array do tipo inteiro, com 4 posições, que pode armazenar 4 valores diferentes.
+
+// arrayInteiros[0] = 72;                  // Adicionando valores no array. A 1ª posição do array é sempre 0. Array na posição 0, recebe 72.
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[3] = 1;
+
+// Console.WriteLine("Percorrendo o Array com o FOR");
+// for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
+// {
+//     Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
+// }
+
+
+// Console.WriteLine("Percorrendo o Array com o FOREACH, sem contador");
+
+// foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
+// {
+//     Console.WriteLine(valor);
+// }
+
+
+// Console.WriteLine("Percorrendo o Array com o FOREACH, com contador");
+
+// int contadorForeach = 0;
+// foreach(int valor in arrayInteiros)   // Variável que vai receber o elemento atual do array
+// {
+//     Console.WriteLine($"Posição Nº {contadorForeach} = {valor}");
+//     contadorForeach++;
+// }
 
 
 
