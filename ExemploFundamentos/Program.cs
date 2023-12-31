@@ -1,14 +1,14 @@
 ﻿using System.Security.AccessControl;
 using ExemploFundamentos.Models;
 
-int[] arrayInteiros = new int[3];       // Array do tipo inteiro, com 3 posições, que pode armazenar 3 valores diferentes.
+int[] arrayInteiros = new int[4];       // Array do tipo inteiro, com 4 posições, que pode armazenar 4 valores diferentes.
 
 arrayInteiros[0] = 72;                  // Adicionando valores no array. A 1ª posição do array é sempre 0. Array na posição 0, recebe 72.
 arrayInteiros[1] = 64;
 arrayInteiros[2] = 50;
-// arrayInteiros[3] = 1;
+arrayInteiros[3] = 1;
 
-for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 3 elementos (0, 1, 2).
+for(int contador = 0; contador < arrayInteiros.Length; contador++)  // Acessar o array e exibir o conteúdo na tela. Lenght obtem o número máximo de elementos de um array, neste caso, 4 elementos (0, 1, 2, 3).
 {
     Console.WriteLine($"Posição Nº {contador} - {arrayInteiros[contador]}");
 
