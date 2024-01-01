@@ -14,5 +14,11 @@ namespace ExemploExplorando.Models
         {
             Alunos.Add(aluno);
         }
+
+        public int ObterQuantidadeDeAlunosMatriculados()   // inteiro para contar quantos alunos eu tenho matriculados
+        {
+            int quantidade = Alunos.Count; // criar uma variável do tipo inteiro. Count retorna o número de elementos dentro de uma lista de inteiros.
+            return quantidade;             // return significa que você chegou ao final do seu Método e ele vai te retornar alguma coisa.
+        }
     }
 }
