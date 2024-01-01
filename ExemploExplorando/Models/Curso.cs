@@ -7,7 +7,7 @@ namespace ExemploExplorando.Models
 {
     public class Curso
     {
-        public string nome { get; set; }            // Criado uma Propriedade chamada Nome
+        public string Nome { get; set; }            // Criado uma Propriedade chamada Nome
         public List<Pessoa> Alunos { get; set; }    // Cliar uma Propriedade Coleção, uma Lista de Pessoas. Lista é uma coleção de um determinado tipo.
 
         public void AdicionarAluno(Pessoa aluno)    // Criar o Método. Como parâmetro, colocar Pessoa e chamar de aluno.
@@ -24,8 +24,17 @@ namespace ExemploExplorando.Models
         // public void RemoverAluno(Pessoa aluno)   // void significa vazio, não precisa de retorno
         public bool RemoverAluno(Pessoa aluno)      // qualquer método for diferente de void, precisa de retorno
         {
-            return Alunos.Remove(aluno);                   // Adicionar aluno
-            // return true;                         // posso remover o return true; e colocar apenas o return na linha acima.
+            return Alunos.Remove(aluno);            // Remover aluno
+            // return true;                         // posso remover o return true; e colocar apenas return na linha acima.
+        }
+
+        public void ListarAlunos()                  // criar um método CriarAlunos
+        {
+            Console.WriteLine($"Alunos do curso de: {Nome} ");
+            foreach (Pessoa aluno in Alunos)        // fazer um laço 
+            {
+                Console.WriteLine(aluno.NomeCompleto);                
+            }       
         }
     }
 }
