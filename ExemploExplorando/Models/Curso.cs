@@ -12,13 +12,20 @@ namespace ExemploExplorando.Models
 
         public void AdicionarAluno(Pessoa aluno)    // Criar o Método. Como parâmetro, colocar Pessoa e chamar de aluno.
         {
-            Alunos.Add(aluno);
+            Alunos.Add(aluno);                      // Adicionar aluno
         }
 
         public int ObterQuantidadeDeAlunosMatriculados()   // inteiro para contar quantos alunos eu tenho matriculados
         {
             int quantidade = Alunos.Count; // criar uma variável do tipo inteiro. Count retorna o número de elementos dentro de uma lista de inteiros.
             return quantidade;             // return significa que você chegou ao final do seu Método e ele vai te retornar alguma coisa.
+        }
+
+        // public void RemoverAluno(Pessoa aluno)   // void significa vazio, não precisa de retorno
+        public bool RemoverAluno(Pessoa aluno)      // qualquer método for diferente de void, precisa de retorno
+        {
+            return Alunos.Remove(aluno);                   // Adicionar aluno
+            // return true;                         // posso remover o return true; e colocar apenas o return na linha acima.
         }
     }
 }
