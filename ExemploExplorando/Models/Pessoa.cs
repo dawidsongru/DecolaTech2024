@@ -12,11 +12,8 @@ namespace ExemploExplorando.Models
         
         public string Nome
         {
-            get                                 // Obter valor.
-            {
-                return _nome.ToUpper();         // Retornar um nome com todas as letras maiúsculas.
-            }
-
+            get => _nome.ToUpper();
+            
             set                                 // Atribuir valor.
             {
                 if (value == "")                // se valor for igual a vazio. O value é o argumento que está recebendo o nome.
