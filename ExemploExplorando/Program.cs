@@ -2,11 +2,29 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 
-// Formatando data e hora
-DateTime data = DateTime.Now;               // Now significa agora, data e hora atual.
+// DateTime com TryParse
+string dataString = "2022-04-17 18:00";                         // Data em formato de String
 
-Console.WriteLine(data.ToShortDateString());               // Só data.
-Console.WriteLine(data.ToShortTimeString());               // Só hora.
+DateTime.TryParseExact(dataString,                              // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
+                       "yyyy-MM-dd HH:mm",                      // Formato    
+                       CultureInfo.InvariantCulture,            // Independe da Cultura
+                       DateTimeStyles.None, out DateTime data); // Se conseguir converter ou não, joga numa variável data.
+
+Console.WriteLine(data);
+
+
+
+
+
+
+
+
+
+// Formatando data e hora
+// DateTime data = DateTime.Now;               // Now significa agora, data e hora atual.
+
+// Console.WriteLine(data.ToShortDateString());    // Só data.
+// Console.WriteLine(data.ToShortTimeString());    // Só hora.
 
 
 
