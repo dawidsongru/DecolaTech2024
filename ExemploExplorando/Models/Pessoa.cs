@@ -7,6 +7,18 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa
     {
+        // Por convenção, um construtor fica logo abaixo da sua classe. É o 1º item da sua classe.
+
+        public Pessoa()    // você pode ter mais de um construtor. Não tem limite de construtores.
+        {
+            
+        }
+
+        public Pessoa(string nome, string sobrenome)     // Todo construtor vai ter o mesmo nome da sua classe. Ele não tem retorno, pode ser vazio ou receber parâmetros.
+        {
+            
+        }
+
         // Não queremos que o nome seja vazio.
         private string _nome;               // criar um campo _nome do tipo privado
         private int _idade;                 // criar um campo _idade do tipo privado
