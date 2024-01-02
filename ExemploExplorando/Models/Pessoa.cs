@@ -9,14 +9,15 @@ namespace ExemploExplorando.Models
     {
         // Por convenção, um construtor fica logo abaixo da sua classe. É o 1º item da sua classe.
 
-        public Pessoa()    // você pode ter mais de um construtor. Não tem limite de construtores.
+        public Pessoa()    // você pode ter mais de um construtor. Não tem limite de construtores. O 1º construtor não recebe nada.
         {
             
         }
 
         public Pessoa(string nome, string sobrenome)     // Todo construtor vai ter o mesmo nome da sua classe. Ele não tem retorno, pode ser vazio ou receber parâmetros.
         {
-            
+            Nome = nome;
+            Sobrenome = sobrenome;
         }
 
         // Não queremos que o nome seja vazio.
@@ -26,12 +27,12 @@ namespace ExemploExplorando.Models
         public string Nome
         {
 
-        get => _nome.ToUpper();     // Body Expression: Uma maneira mais resumida no GET e SET para seu código ficar mais legível.
+            get => _nome.ToUpper();     // Body Expression: Uma maneira mais resumida no GET e SET para seu código ficar mais legível.
         
-        // get
-        // {
-        //     return _nome.ToUpper();      // Se o seu código tiver só uma linha, é preferível usar o Body Expression.
-        // }
+            // get
+            // {
+            //     return _nome.ToUpper();      // Se o seu código tiver só uma linha, é preferível usar o Body Expression.
+            // }
 
             set                             // Atribuir valor.
             {

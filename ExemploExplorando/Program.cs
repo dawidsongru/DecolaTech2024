@@ -1,11 +1,11 @@
 ﻿using ExemploExplorando.Models;         // Importar o namespace que está dentro de Models
 
 // Implementando o método listar alunos
-Pessoa p1 = new Pessoa("Dawidson", "Pereira");               // Instanciada uma classe Pessoa. Variável p1 do tipoo Pessoa.
+Pessoa p1 = new Pessoa(nome: "Dawidson", sobrenome: "Pereira");               // Instanciada uma classe Pessoa. Variável p1 do tipoo Pessoa.
 // p1.Nome = "Dawidson";
 // p1.Sobrenome = "Pereira";
 
-Pessoa p2 = new Pessoa("Eduardo", "Neves Queiroz");          // Instanciada uma classe Pessoa. Variável p2 do tipoo Pessoa.
+Pessoa p2 = new Pessoa(nome: "Eduardo", sobrenome: "Neves Queiroz");          // Instanciada uma classe Pessoa. Variável p2 do tipoo Pessoa.
 // p2.Nome = "Eduardo";
 // p2.Sobrenome = "Neves Quairoz";
 
