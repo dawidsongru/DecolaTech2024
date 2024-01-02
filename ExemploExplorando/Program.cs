@@ -2,15 +2,37 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 
-// DateTime com TryParse
-string dataString = "2022-04-17 18:00";                         // Data em formato de String
+// Validando o retorno do TryParse
+// string dataString = "2022-04-170 18:00";                     // Data errada
+string dataString = "2022-04-17 18:00";                         // Data correta
 
-DateTime.TryParseExact(dataString,                              // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
+bool sucesso = DateTime.TryParseExact(dataString,               // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
                        "yyyy-MM-dd HH:mm",                      // Formato    
                        CultureInfo.InvariantCulture,            // Independe da Cultura
                        DateTimeStyles.None, out DateTime data); // Se conseguir converter ou não, joga numa variável data.
 
-Console.WriteLine(data);
+if (sucesso)
+{
+    Console.WriteLine($"Conversão com sucesso! Data: {data}");
+}
+else
+{
+    Console.WriteLine($"{dataString} não é uma data vállida");
+}
+
+
+
+
+
+// // DateTime com TryParse
+// string dataString = "2022-04-17 18:00";                         // Data em formato de String
+
+// DateTime.TryParseExact(dataString,                              // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
+//                        "yyyy-MM-dd HH:mm",                      // Formato    
+//                        CultureInfo.InvariantCulture,            // Independe da Cultura
+//                        DateTimeStyles.None, out DateTime data); // Se conseguir converter ou não, joga numa variável data.
+
+// Console.WriteLine(data);
 
 
 
