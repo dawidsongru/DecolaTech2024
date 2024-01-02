@@ -2,11 +2,13 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 // Lembrando que essa cultura vai funcionar para todo o sistema
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US"); // No começo do código inserir a linha e informar a cultura do sistema entre parênteses.
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); // No começo do código inserir a linha e informar a cultura do sistema entre parênteses.
 
 decimal valorMonetario = 1582.40M;          // Decimal precisa colocar o M no final para ele reconhecer.
 
-Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
+// Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));    // formatar sem usar a Interpolação de String.
+
 
 
 
