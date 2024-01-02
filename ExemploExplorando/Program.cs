@@ -1,21 +1,42 @@
 ﻿using ExemploExplorando.Models;         // Importar o namespace que está dentro de Models
 
-// Implementando o método listar alunos
-Pessoa p1 = new Pessoa(nome: "Dawidson", sobrenome: "Pereira");               // Instanciada uma classe Pessoa. Variável p1 do tipoo Pessoa.
-// p1.Nome = "Dawidson";
-// p1.Sobrenome = "Pereira";
+// // Concatenar Strings
 
-Pessoa p2 = new Pessoa(nome: "Eduardo", sobrenome: "Neves Queiroz");          // Instanciada uma classe Pessoa. Variável p2 do tipoo Pessoa.
-// p2.Nome = "Eduardo";
-// p2.Sobrenome = "Neves Quairoz";
+// string numero1 = "10";
+// string numero2 = "20";
 
-Curso cursoDeIngles = new Curso();      // Instanciar uma classe chamada Curso e chamar de Inglês
-cursoDeIngles.Nome = "Ingles";          // Nome é uma propriedade, tem Get e Set.
-cursoDeIngles.Alunos = new List<Pessoa>();
+// string resultado = numero1 + numero2;
 
-cursoDeIngles.AdicionarAluno(p1);
-cursoDeIngles.AdicionarAluno(p2);
-cursoDeIngles.ListarAlunos();
+// Console.WriteLine(resultado);
+
+
+// Concatenar Inteiros
+
+int numero1 = 10;
+int numero2 = 20;
+
+int resultado = numero1 + numero2;
+
+Console.WriteLine(resultado);
+
+
+
+// // Implementando o método listar alunos
+// Pessoa p1 = new Pessoa(nome: "Dawidson", sobrenome: "Pereira");               // Instanciada uma classe Pessoa. Variável p1 do tipoo Pessoa.
+// // p1.Nome = "Dawidson";
+// // p1.Sobrenome = "Pereira";
+
+// Pessoa p2 = new Pessoa(nome: "Eduardo", sobrenome: "Neves Queiroz");          // Instanciada uma classe Pessoa. Variável p2 do tipoo Pessoa.
+// // p2.Nome = "Eduardo";
+// // p2.Sobrenome = "Neves Quairoz";
+
+// Curso cursoDeIngles = new Curso();      // Instanciar uma classe chamada Curso e chamar de Inglês
+// cursoDeIngles.Nome = "Ingles";          // Nome é uma propriedade, tem Get e Set.
+// cursoDeIngles.Alunos = new List<Pessoa>();
+
+// cursoDeIngles.AdicionarAluno(p1);
+// cursoDeIngles.AdicionarAluno(p2);
+// cursoDeIngles.ListarAlunos();
 
 
 
