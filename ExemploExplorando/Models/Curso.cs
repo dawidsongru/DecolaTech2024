@@ -53,7 +53,7 @@ namespace ExemploExplorando.Models
                         
             for (int count = 0; count < Alunos.Count; count++)      // Alunos.Count para contar. variável i, chamar de count, que será o contador.
             {
-                string texto = $"Nº {count} - {Alunos[count].NomeCompleto}";    // Interpolar String. $ antes da string. 
+                string texto = $"Nº {count +1} - {Alunos[count].NomeCompleto}";    // Interpolar String. $ antes da string. 
                 Console.WriteLine(texto);
             }
                 Console.WriteLine("\n");
