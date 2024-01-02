@@ -1,4 +1,22 @@
-﻿using ExemploExplorando.Models;         // Importar o namespace que está dentro de Models
+﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
+
+decimal valorMonetario = 1582.40M;
+
+Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // // Concatenar Strings
 
@@ -10,14 +28,14 @@
 // Console.WriteLine(resultado);
 
 
-// Concatenar Inteiros
+// // Concatenar Inteiros
 
-int numero1 = 10;
-int numero2 = 20;
+// int numero1 = 10;
+// int numero2 = 20;
 
-int resultado = numero1 + numero2;
+// int resultado = numero1 + numero2;
 
-Console.WriteLine(resultado);
+// Console.WriteLine(resultado);
 
 
 
