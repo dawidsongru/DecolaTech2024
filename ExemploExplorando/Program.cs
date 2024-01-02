@@ -1,20 +1,35 @@
 ﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
 using System.Globalization;                 // Importar o namespace System.Globalization
 
-// Lembrando que essa cultura vai funcionar para todo o sistema
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); // No começo do código inserir a linha e informar a cultura do sistema entre parênteses.
 
-decimal valorMonetario = 1582.40M;          // Decimal precisa colocar o M no final para ele reconhecer.
+// DateTime
+DateTime data = DateTime.Now;               // Now significa agora, data e hora atual.
 
-// Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
-Console.WriteLine(valorMonetario.ToString("N2"));    // formatar sem usar a Interpolação de String. C = currency. N = número. 2 = duas casas decimais.
+Console.WriteLine(data);                                // Data e hora atual.
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));   // MM mês. mm min. HH formato de 24hs.
+Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));     // MM mês. mm min. hh formato de 12hs.
+Console.WriteLine(data.ToString("dd/M/yyyy"));          // M mês ocultando o 0.
+Console.WriteLine(data.ToString("dd-MM-yyyy"));         // Data separada por -.
+Console.WriteLine(data.ToString("yyyy-MM-dd"));         // Ano-Mês-Dia.
 
-double porcentagem = .3421;
 
-Console.WriteLine(porcentagem.ToString("P"));
 
-int numero = 123456;
-Console.WriteLine(numero.ToString("##-##-##"));
+
+
+// // Lembrando que essa cultura vai funcionar para todo o sistema
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); // No começo do código inserir a linha e informar a cultura do sistema entre parênteses.
+
+// decimal valorMonetario = 1582.40M;          // Decimal precisa colocar o M no final para ele reconhecer.
+
+// // Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
+// Console.WriteLine(valorMonetario.ToString("N2"));    // formatar sem usar a Interpolação de String. C = currency. N = número. 2 = duas casas decimais.
+
+// double porcentagem = .3421;
+
+// Console.WriteLine(porcentagem.ToString("P"));
+
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
