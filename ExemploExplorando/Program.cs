@@ -7,10 +7,14 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); // No começ
 decimal valorMonetario = 1582.40M;          // Decimal precisa colocar o M no final para ele reconhecer.
 
 // Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
-Console.WriteLine(valorMonetario.ToString("N2"));    // formatar sem usar a Interpolação de String.
+Console.WriteLine(valorMonetario.ToString("N2"));    // formatar sem usar a Interpolação de String. C = currency. N = número. 2 = duas casas decimais.
 
+double porcentagem = .3421;
 
+Console.WriteLine(porcentagem.ToString("P"));
 
+int numero = 123456;
+Console.WriteLine(numero.ToString("##-##-##"));
 
 
 
