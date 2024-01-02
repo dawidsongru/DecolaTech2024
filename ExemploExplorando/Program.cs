@@ -7,7 +7,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); // No começ
 decimal valorMonetario = 1582.40M;          // Decimal precisa colocar o M no final para ele reconhecer.
 
 // Console.WriteLine($"{valorMonetario:C}");   // interpolação de String e :, formatar com uma determinada formatação. C significa currency = moeda. 
-Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));    // formatar sem usar a Interpolação de String.
+Console.WriteLine(valorMonetario.ToString("N2"));    // formatar sem usar a Interpolação de String.
 
 
 
