@@ -32,15 +32,35 @@ namespace ExemploExplorando.Models
 
         public void ListarAlunos()                  // criar um método CriarAlunos
         {
-            Console.WriteLine($"Alunos do curso de: {Nome} ");      // Concatenação ou Interpolação de Strings
-            
+        
+        
+            // // Concatenar Strings
+            // Console.WriteLine("\nConcatenar Strings \n");
+            // Console.WriteLine($"Alunos do curso de: {Nome} ");
+                        
+            // for (int count = 0; count < Alunos.Count; count++)      // Alunos.Count para contar. variável i, chamar de count, que será o contador.
+            // {
+            //     string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;  // Concatenar String. Nº do aluno - Nome completo. Criar uma nova variável com o nome texto
+            //     Console.WriteLine(texto);
+            // }
+            //     Console.WriteLine("\n");
+
+
+
+            // Interpolar Strings
+            Console.WriteLine("\nInterpolar Strings \n");
+            Console.WriteLine($"Alunos do curso de: {Nome} ");      
+                        
             for (int count = 0; count < Alunos.Count; count++)      // Alunos.Count para contar. variável i, chamar de count, que será o contador.
             {
-                string texto = "Nº " + count + " " + Alunos[count].NomeCompleto; // Nº do aluno - Nome completo. Criar uma nova variável com o nome texto
+                string texto = $"Nº {count} - {Alunos[count].NomeCompleto}";    // Interpolar String. $ antes da string. 
                 Console.WriteLine(texto);
-                // Console.WriteLine(Alunos[count].NomeCompleto);      // variável aluno vira Alunos[count] seguido da contagem.
             }
-            
+                Console.WriteLine("\n");
+
+
+
+
             // foreach (Pessoa aluno in Alunos)        // fazer um laço 
             // {
             //     Console.WriteLine(aluno.NomeCompleto);                
