@@ -2,15 +2,25 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 
-// DateTime
+// Formatando data e hora
 DateTime data = DateTime.Now;               // Now significa agora, data e hora atual.
 
-Console.WriteLine(data);                                // Data e hora atual.
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));   // MM mês. mm min. HH formato de 24hs.
-Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));     // MM mês. mm min. hh formato de 12hs.
-Console.WriteLine(data.ToString("dd/M/yyyy"));          // M mês ocultando o 0.
-Console.WriteLine(data.ToString("dd-MM-yyyy"));         // Data separada por -.
-Console.WriteLine(data.ToString("yyyy-MM-dd"));         // Ano-Mês-Dia.
+Console.WriteLine(data.ToShortDateString());               // Só data.
+Console.WriteLine(data.ToShortTimeString());               // Só hora.
+
+
+
+
+
+// // DateTime
+// DateTime data = DateTime.Now;               // Now significa agora, data e hora atual.
+
+// Console.WriteLine(data);                                // Data e hora atual.
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));   // MM mês. mm min. HH formato de 24hs.
+// Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));     // MM mês. mm min. hh formato de 12hs.
+// Console.WriteLine(data.ToString("dd/M/yyyy"));          // M mês ocultando o 0.
+// Console.WriteLine(data.ToString("dd-MM-yyyy"));         // Data separada por -.
+// Console.WriteLine(data.ToString("yyyy-MM-dd"));         // Ano-Mês-Dia.
 
 
 
