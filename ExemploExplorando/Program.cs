@@ -1,38 +1,49 @@
 ﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
 using System.Globalization;                 // Importar o namespace System.Globalization
 
-
-try // tente
-{
-    // Realizando a leitura de um arquivo
-    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
-
-    foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
-    {
-        Console.WriteLine(linha);
-    }
-}
- catch(FileNotFoundException ex)
-{
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
-}
- catch(DirectoryNotFoundException ex)
-{
-    Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. " + ex.Message);
-}
-
-catch(Exception ex)
-{
-    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
-}
-finally
-{
-    Console.WriteLine("Chegou até aqui"); 
-}
+new ExemploExcecao().Metodo1();
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// try // tente
+// {
+//     // Realizando a leitura de um arquivo
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
+
+//     foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+//  catch(FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+// }
+//  catch(DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado. " + ex.Message);
+// }
+
+// catch(Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("Chegou até aqui"); 
+// }
 
 
 
