@@ -1,7 +1,30 @@
 ﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
 using System.Globalization;                 // Importar o namespace System.Globalization
 
-new ExemploExcecao().Metodo1();
+
+Queue<int> fila = new Queue<int>();         // Criar uma fila. Queue<int> int é o tipo.
+
+fila.Enqueue(2);                            // Adicionar elementos na fila
+fila.Enqueue(4); 
+fila.Enqueue(6); 
+fila.Enqueue(8); 
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");                            // Remover elementos na fila
+fila.Enqueue(10);
+
+foreach(int item in fila)
+{
+    Console.WriteLine(item);
+}
+
+
+
+//new ExemploExcecao().Metodo1();
 
 
 
