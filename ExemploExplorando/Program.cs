@@ -2,23 +2,43 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 
-// Validando o retorno do TryParse
-// string dataString = "2022-04-170 18:00";                     // Data errada
-string dataString = "2022-04-17 18:00";                         // Data correta
+// Realizando a leitura de um arquivo.
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
 
-bool sucesso = DateTime.TryParseExact(dataString,               // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
-                       "yyyy-MM-dd HH:mm",                      // Formato    
-                       CultureInfo.InvariantCulture,            // Independe da Cultura
-                       DateTimeStyles.None, out DateTime data); // Se conseguir converter ou não, joga numa variável data.
+foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
+{
+     Console.WriteLine(linha);
+}
 
-if (sucesso)
-{
-    Console.WriteLine($"Conversão com sucesso! Data: {data}");
-}
-else
-{
-    Console.WriteLine($"{dataString} não é uma data vállida");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+// // Validando o retorno do TryParse
+// // string dataString = "2022-04-170 18:00";                     // Data errada
+// string dataString = "2022-04-17 18:00";                         // Data correta
+
+// bool sucesso = DateTime.TryParseExact(dataString,               // Tentar converter a String em uma data válida. dataString é a data que você quer trabalhar.
+//                        "yyyy-MM-dd HH:mm",                      // Formato    
+//                        CultureInfo.InvariantCulture,            // Independe da Cultura
+//                        DateTimeStyles.None, out DateTime data); // Se conseguir converter ou não, joga numa variável data.
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"Conversão com sucesso! Data: {data}");
+// }
+// else
+// {
+//     Console.WriteLine($"{dataString} não é uma data vállida");
+// }
 
 
 
