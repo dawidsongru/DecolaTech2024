@@ -5,7 +5,7 @@ using System.Globalization;                 // Importar o namespace System.Globa
 try // tente
 {
     // Realizando a leitura de um arquivo
-    string[] linhas = File.ReadAllLines("Arquivos/d/arquivo_Leitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
 
     foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
     {
@@ -25,8 +25,12 @@ catch(Exception ex)
 {
     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 }
+finally
+{
+    Console.WriteLine("Chegou até aqui"); 
+}
 
-    Console.WriteLine("Chegou até aqui");
+
 
 
 
