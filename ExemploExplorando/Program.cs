@@ -2,17 +2,21 @@
 using System.Globalization;                 // Importar o namespace System.Globalization
 
 
-// Realizando a leitura de um arquivo.
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
-
-foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
+try // tente
 {
-     Console.WriteLine(linha);
+    // Realizando a leitura de um arquivo
+    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");   // Array de strings. File é uma classe para ler arquivos. ReadAllLines ler todas as linhas.
+
+    foreach(string linha in linhas)     //  iterar sobre cada linha no array de strings
+    {
+        Console.WriteLine(linha);
+    }
+} catch(Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
 }
 
-
-
-
+    Console.WriteLine("Chegou até aqui");
 
 
 
