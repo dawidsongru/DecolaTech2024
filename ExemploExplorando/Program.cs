@@ -1,36 +1,78 @@
 ﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
 using System.Globalization;                 // Importar o namespace System.Globalization
 
+// Pilha
+Stack<int> pilha = new Stack<int>();        // Criar uma pilha. Stack<int> int é o tipo, inteiro.
 
-Queue<int> fila = new Queue<int>();         // Criar uma fila. Queue<int> int é o tipo.
+pilha.Push(4);                              // Adicionar elementos no topo da pilha
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
 
-fila.Enqueue(2);                            // Adicionar elementos na fila
-fila.Enqueue(4); 
-fila.Enqueue(6); 
-fila.Enqueue(8); 
-
-foreach(int item in fila)
+foreach(int item in pilha)
 {
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");                            // Remover elementos na fila
-fila.Enqueue(10);
+Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");   // Remover elementos da pilha
 
-foreach(int item in fila)
+pilha.Push(20);                             // Adicionar mais um elementos no topo da pilha
+
+foreach(int item in pilha)                  // Listar novamente a fila
 {
     Console.WriteLine(item);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Fila
+// Queue<int> fila = new Queue<int>();         // Criar uma fila. Queue<int> int é o tipo, inteiro.
+
+// fila.Enqueue(2);                            // Adicionar elementos no final da fila
+// fila.Enqueue(4); 
+// fila.Enqueue(6); 
+// fila.Enqueue(8); 
+
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");   // Remover elementos na fila
+// fila.Enqueue(10);                           // Adicionar novo elementos no final da fila
+
+// foreach(int item in fila)                   // Listar novamente a fila
+// {
+//     Console.WriteLine(item);
+// }
+
+
+
+
+
+
+
 
 
 
 //new ExemploExcecao().Metodo1();
-
-
-
-
-
-
 
 
 
