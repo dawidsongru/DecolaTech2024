@@ -1,27 +1,20 @@
 ﻿using ExemploExplorando.Models;             // Importar o namespace que está dentro de Models
-using System.Globalization;                 // Importar o namespace System.Globalization
+using System.Globalization;
 
-// Pilha
-Stack<int> pilha = new Stack<int>();        // Criar uma pilha. Stack<int> int é o tipo, inteiro.
+// Dictionary
+Dictionary<string, string> estados = new Dictionary<string, string>();  // Criar um tipo Dictionary. Precisa passar 2 tipos
+                                                                        // 1º elemento é a chave. 2º elemento é o valor.
+                                                                        // 1º elemento tem que ser único, não pode existir outro, senão irá causar uma exceção.
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
 
-pilha.Push(4);                              // Adicionar elementos no topo da pilha
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
-
-foreach(int item in pilha)
+foreach(var item in estados)                // Percorrer o dicionário
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");   // Remover elementos da pilha
-
-pilha.Push(20);                             // Adicionar mais um elementos no topo da pilha
-
-foreach(int item in pilha)                  // Listar novamente a fila
-{
-    Console.WriteLine(item);
-}
+// estados.Add("BA", "Bahia");                 // Se tentar adicionar novamente, vai gerar um erro, uma exceção.
 
 
 
@@ -30,13 +23,27 @@ foreach(int item in pilha)                  // Listar novamente a fila
 
 
 
+// // Pilha
+// Stack<int> pilha = new Stack<int>();        // Criar uma pilha. Stack<int> int é o tipo, inteiro.
 
+// pilha.Push(4);                              // Adicionar elementos no topo da pilha
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
 
+// foreach(int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");   // Remover elementos da pilha
 
+// pilha.Push(20);                             // Adicionar mais um elementos no topo da pilha
 
-
-
+// foreach(int item in pilha)                  // Listar novamente a fila
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
