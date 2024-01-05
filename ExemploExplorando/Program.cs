@@ -14,7 +14,44 @@ foreach(var item in estados)                // Percorrer o dicionário
     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
 
-// estados.Add("BA", "Bahia");                 // Se tentar adicionar novamente, vai gerar um erro, uma exceção.
+// estados.Add("BA", "Bahia");              // Se tentar adicionar novamente, vai gerar um erro, uma exceção.
+
+Console.WriteLine("----------------------");
+
+// Remover BA    
+estados.Remove("BA");                           // Removendo “BA”, passando a chave.
+
+// Alterando o valor
+estados["SP"] = "São Paulo - valor alterado";   // Alterando "SP", passando a chave e o novo conteúdo 
+
+foreach(var item in estados)                    // Percorrer o dicionário
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+Console.WriteLine("----------------------");
+
+
+// Velificando se um elemento existe no Dictionary
+string chave = "BA";                            // criar uma string chave e procurar por "BA"
+Console.WriteLine($"Verificando o elemento: {chave}");
+
+if (estados.ContainsKey(chave))                // ContainsKey: Utilizar esse método para verificar se uma chave já foi adicionada ou não.
+{
+    Console.WriteLine($"Valor existente: {chave}");
+}
+
+else
+{
+    Console.WriteLine($"Valor não existente. É seguro adicionar a chave: {chave}\n");
+}
+
+
+// Como obter o valor "Minas Gerais"
+Console.WriteLine(estados["MG"]);           // Obtendo o valor "Minas Gerais"
+
+Console.WriteLine("");
+
 
 
 
