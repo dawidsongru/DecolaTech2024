@@ -1,13 +1,29 @@
-﻿using ExemploPOO.Models;
-
-ContaCorrente c1 = new ContaCorrente(123, 1000);        // instanciar uma conta corrente. Número da conta 123 e valor inicial 1.000
-
-c1.ExibirSaldo();
-c1.Sacar(5000);
-c1.ExibirSaldo();
+﻿using ExemploPOO.Models;        // A nossa classe Pessoa está dentro da pasta ExemploPOO.Models
 
 
+Aluno a1 = new Aluno();
+a1.Nome = "Dawidson";
+a1.Idade = 46;
+a1.Email = "teste@teste.com";
+a1.Apresentar();
 
+
+
+
+
+
+
+
+
+
+
+
+
+// ContaCorrente c1 = new ContaCorrente(123, 1000);        // instanciar uma conta corrente. Número da conta 123 e valor inicial 1.000
+
+// c1.ExibirSaldo();
+// c1.Sacar(5000);
+// c1.ExibirSaldo();
 
 
 
