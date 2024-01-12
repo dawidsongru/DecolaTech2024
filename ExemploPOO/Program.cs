@@ -1,14 +1,10 @@
-﻿using ExemploPOO.Models;        // A nossa classe Pessoa está dentro da pasta ExemploPOO.Models
+﻿// Construtor por herança
+using ExemploPOO.Models;
 
 
-
-// Conta c = new Conta();           // tentando instanciar essa classe. Tem erro porque Conta é abstrata.
-Corrente c = new Corrente();        // Agora não tem mais erros porque corrente não é abstrata
-c.Creditar(500);                    // Creditar R$ 500 em minha conta
-c.ExibirSaldo();                    // Exibir o saldo
-
-
-
+Pessoa p1 = new Pessoa("Dawidson");
+Aluno a1 = new Aluno("Eduardo");
+a1.Apresentar();
 
 
 
@@ -17,9 +13,14 @@ c.ExibirSaldo();                    // Exibir o saldo
 
 
 
+// using ExemploPOO.Models;        // A nossa classe Pessoa está dentro da pasta ExemploPOO.Models
 
 
 
+// // Conta c = new Conta();           // tentando instanciar essa classe. Tem erro porque Conta é abstrata.
+// Corrente c = new Corrente();        // Agora não tem mais erros porque corrente não é abstrata
+// c.Creditar(500);                    // Creditar R$ 500 em minha conta
+// c.ExibirSaldo();                    // Exibir o saldo
 
 
 
