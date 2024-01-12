@@ -1,11 +1,18 @@
 ﻿using ExemploPOO.Models;        // A nossa classe Pessoa está dentro da pasta ExemploPOO.Models
 
-
 Aluno a1 = new Aluno();
 a1.Nome = "Dawidson";
-a1.Idade = 46;
+a1.Idade = 45;
 a1.Email = "teste@teste.com";
+a1.Nota = 10;
 a1.Apresentar();
+
+// Polimorfismo
+Professor p1 = new Professor(); // Instancinar a classe Professor
+p1.Nome = "Eduardo";
+p1.Idade = 30;
+p1.Salario = 1000;
+p1.Apresentar();
 
 
 

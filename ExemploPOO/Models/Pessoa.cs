@@ -1,3 +1,4 @@
+// Classe é apenas um Molde
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace ExemploPOO.Models
         public int Idade { get; set; }
         public string Email { get; set; }
 
-        public void Apresentar()
+        public virtual void Apresentar()    // virtual significa que esse método pode ser sobrescrito se a classe filha desejar
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos!");
+            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
         }
     }
 }
