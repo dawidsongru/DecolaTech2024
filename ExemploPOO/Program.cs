@@ -1,4 +1,4 @@
-﻿// Construtor por herança
+﻿// Método selado na prática
 using ExemploPOO.Models;
 
 
@@ -7,6 +7,16 @@ c.Creditar(300);
 c.ExibirSaldo();
 
 
+
+
+
+// // Construtor por herança
+// using ExemploPOO.Models;
+
+
+// Corrente c = new Corrente();
+// c.Creditar(300);
+// c.ExibirSaldo();
 
 
 

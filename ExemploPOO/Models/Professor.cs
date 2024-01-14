@@ -1,4 +1,4 @@
-// Classe selada na Prática
+// Método selado na prática
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    public selead class Professor : Pessoa     // : Professor para herdar da classe Pessoa. Colocar a palavra selead (selado)
+    public class Professor : Pessoa     // : Professor para herdar da classe Pessoa. Colocar a palavra selead (selado)
     {
         public decimal Salario { get; set; }
 
@@ -16,6 +16,31 @@ namespace ExemploPOO.Models
         }
     }
 }
+
+
+
+
+
+
+
+// // Classe selada na Prática
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+// using System.Threading.Tasks;
+
+// namespace ExemploPOO.Models
+// {
+//     public selead class Professor : Pessoa     // : Professor para herdar da classe Pessoa. Colocar a palavra selead (selado)
+//     {
+//         public decimal Salario { get; set; }
+
+//         public override void Apresentar()
+//         {
+//             Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Idade} anos, sou um professor e ganho {Salario}");
+//         }
+//     }
+// }
 
 
 
