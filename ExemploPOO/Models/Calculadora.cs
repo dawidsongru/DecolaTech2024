@@ -1,4 +1,4 @@
-// Interface na prática
+// Método padrão na interface
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +9,10 @@ namespace ExemploPOO.Models
 {
     public class Calculadora : ICalculadora
     {
-        public int Dividir(int num1, int num2)
-        {
-            return num1 / num2;
-        }
+        // public int Dividir(int num1, int num2)       // Se apagar o método calculadora, o programa funciona normalmente, sem erro. 
+        // {
+        //     return num1 / num2;
+        // }
 
         public int Multiplicar(int num1, int num2)
         {
