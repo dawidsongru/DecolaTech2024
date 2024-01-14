@@ -1,11 +1,9 @@
-﻿// Classe object na prática
+﻿// Interface na prática
 using ExemploPOO.Models;
+using ExemploPOO.Interfaces;
 
-Computador c = new Computador();        // Instanciar a classe computador
-Console.WriteLine(c.ToString());
-
-
-
+ICalculadora calc = new Calculadora();
+Console.WriteLine(calc.Multiplicar(3,9));
 
 
 
@@ -15,6 +13,12 @@ Console.WriteLine(c.ToString());
 
 
 
+
+// // Classe object na prática
+// using ExemploPOO.Models;
+
+// Computador c = new Computador();        // Instanciar a classe computador
+// Console.WriteLine(c.ToString());
 
 
 
