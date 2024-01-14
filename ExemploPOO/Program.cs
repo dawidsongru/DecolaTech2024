@@ -2,9 +2,9 @@
 using ExemploPOO.Models;
 
 
-Pessoa p1 = new Pessoa("Dawidson");
-Aluno a1 = new Aluno("Eduardo");
-a1.Apresentar();
+Corrente c = new Corrente();
+c.Creditar(300);
+c.ExibirSaldo();
 
 
 
