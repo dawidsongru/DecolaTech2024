@@ -1,10 +1,33 @@
-﻿// Método selado na prática
+﻿// Classe object na prática
 using ExemploPOO.Models;
 
+Computador c = new Computador();        // Instanciar a classe computador
+Console.WriteLine(c.ToString());
 
-Corrente c = new Corrente();
-c.Creditar(300);
-c.ExibirSaldo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Método selado na prática
+// using ExemploPOO.Models;
+
+
+// Corrente c = new Corrente();
+// c.Creditar(300);
+// c.ExibirSaldo();
 
 
 
