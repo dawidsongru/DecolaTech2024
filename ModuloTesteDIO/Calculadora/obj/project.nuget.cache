@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "enY/4qIBzRb6+8ULg2O63a7hbh8Uh8rLeDpDiBzAYkSHu+Ix6239aKnXQ6ZvlVZGw6drq9USbM9WDCbJ6Pp1gg==",
+  "dgSpecHash": "qL22NFwojlDI8qGOf82uY9kdjPqSnrxpz7B/3GwTTNh9+1V82mSq+SqlqMzU0vJ9AFnFJEsbZpo2HLe+xwk2iA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\calculadora.csproj",
+  "projectFilePath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\calculadora.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\calculadora.csproj": {}
+    "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\calculadora.csproj": {
+    "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\calculadora.csproj",
+        "projectUniqueName": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\calculadora.csproj",
         "projectName": "calculadora",
-        "projectPath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\calculadora.csproj",
+        "projectPath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\calculadora.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\calculadora\\obj\\",
+        "outputPath": "C:\\Projetos\\DecolaTech2024\\ModuloTesteDIO\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config"

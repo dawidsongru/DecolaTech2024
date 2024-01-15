@@ -1,0 +1,15 @@
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.AssemblyInfoInputs.cache
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.AssemblyInfo.cs
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.csproj.CoreCompileInputs.cache
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.sourcelink.json
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\bin\Debug\net8.0\calculadora.exe
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\bin\Debug\net8.0\calculadora.deps.json
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\bin\Debug\net8.0\calculadora.runtimeconfig.json
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\bin\Debug\net8.0\calculadora.dll
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\bin\Debug\net8.0\calculadora.pdb
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.dll
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\refint\calculadora.dll
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.pdb
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\calculadora.genruntimeconfig.cache
+C:\Projetos\DecolaTech2024\ModuloTesteDIO\Calculadora\obj\Debug\net8.0\ref\calculadora.dll
